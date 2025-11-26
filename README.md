@@ -1,11 +1,11 @@
-# 📈 S&P 500 Daily Return Prediction Using Machine Learning
+#  S&P 500 Daily Return Prediction Using Machine Learning
 
 This project focuses on predicting the **next-day forward returns of the S&P 500 index** using a wide range of **market, macroeconomic, volatility, sentiment, momentum, and pricing indicators**.  
 The pipeline is built using **time-series aware machine learning techniques** and is fully production-ready for Kaggle submission and GitHub portfolio showcase.
 
 ---
 
-## 🚀 Project Objective
+##  Project Objective
 
 The goal is to build a **robust regression model** that can accurately predict:
 
@@ -14,18 +14,18 @@ The goal is to build a **robust regression model** that can accurately predict:
 - While avoiding **data leakage and look-ahead bias**
 
 This project is designed for:
-- ✅ Kaggle competitions
-- ✅ Quant & Trading roles
-- ✅ Data Science & Machine Learning interviews
-- ✅ Academic and portfolio projects
+-  Kaggle competitions
+-  Quant & Trading roles
+-  Data Science & Machine Learning interviews
+-  Academic and portfolio projects
 
 ---
 
-## 📂 Dataset Description
+##  Dataset Description
 
 The dataset consists of **decades of daily market data** with multiple feature categories:
 
-### 🔹 Feature Groups
+###  Feature Groups
 
 - `M*`   → Market / Technical Indicators  
 - `E*`   → Macroeconomic Features  
@@ -36,7 +36,7 @@ The dataset consists of **decades of daily market data** with multiple feature c
 - `MOM*` → Momentum Indicators  
 - `D*`   → Dummy / Binary Features  
 
-### 🔹 Target & Financial Variables
+###  Target & Financial Variables
 
 - `forward_returns` → ✅ **Target variable**
 - `risk_free_rate`
@@ -44,21 +44,21 @@ The dataset consists of **decades of daily market data** with multiple feature c
 
 ---
 
-## 🧠 Key Machine Learning Techniques Used
+##  Key Machine Learning Techniques Used
 
-- ✅ Time-Series Train/Validation Split
-- ✅ Walk-Forward Time Series Cross Validation
-- ✅ Feature Scaling using StandardScaler
-- ✅ Missing Value Handling with Median Imputation
-- ✅ Feature Engineering (Lag Features & Rolling Statistics)
-- ✅ Tree-based & Linear Models
-- ✅ Regularized XGBoost for Performance Boosting
-- ✅ Feature Importance Based Selection
-- ✅ Production-Ready Kaggle Submission Pipeline
+-  Time-Series Train/Validation Split
+-  Walk-Forward Time Series Cross Validation
+-  Feature Scaling using StandardScaler
+-  Missing Value Handling with Median Imputation
+-  Feature Engineering (Lag Features & Rolling Statistics)
+-  Tree-based & Linear Models
+-  Regularized XGBoost for Performance Boosting
+-  Feature Importance Based Selection
+-  Production-Ready Kaggle Submission Pipeline
 
 ---
 
-## 🧪 Models Implemented
+##  Models Implemented
 
 | Model | Purpose |
 |--------|----------|
@@ -70,30 +70,30 @@ Final model selection is done using **Walk-Forward Time Series Validation RMSE**
 
 ---
 
-## 🔁 Walk-Forward Time Series Validation
+##  Walk-Forward Time Series Validation
 
 Unlike regular cross-validation, this project uses:
 
-- ✅ `TimeSeriesSplit`
-- ✅ Expanding window validation
-- ✅ No data shuffling
-- ✅ No information leakage from the future
+-  `TimeSeriesSplit`
+-  Expanding window validation
+-  No data shuffling
+-  No information leakage from the future
 
 This makes the evaluation **financially realistic and production-safe**.
 
 ---
 
-## ⚙️ Feature Engineering
+##  Feature Engineering
 
 The following advanced features were added to boost predictive performance:
 
-### ✅ Lag Features
+###  Lag Features
 Lagged values (T-1, T-2) were created for:
 - Market features (`M1`, `M2`)
 - Volatility features (`V1`, `V2`)
 - Momentum features (`MOM1`, `MOM2`)
 
-### ✅ Rolling Features
+###  Rolling Features
 - 5-day rolling mean of returns
 - 5-day rolling standard deviation (volatility proxy)
 
@@ -104,7 +104,7 @@ These features help the model capture:
 
 ---
 
-## 📁 Project Folder Structure
+##  Project Folder Structure
 
 SP500-Return-Prediction/
 │
